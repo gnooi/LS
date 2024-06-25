@@ -1,0 +1,12 @@
+{
+    "welcome" : "Welcome to the game of Rock, Paper, Scissors, Lizard, Spock!",
+    "start" : "Ready to start? Type 'help' for more information or 'yes' to continue",
+    "game_overview" : "\n   1. What is this?\n   Rock, Paper, Scissors, Lizard, Spock \n   is a game of chance that expands the\n   traditional game of Rock, Paper, Scissors.\n\n   2. Goal:\n   Be the first player to win 3 rounds!\n   You will select a character and play\n   against the computer. The character\n   with the 'larger value' wins the round.\n\n   3. Rules:\n   Scissors cuts Paper\n   Paper covers Rock\n   Rock crushes Lizard\n   Lizard poisons Spock\n   Spock smashes Scissors\n   Scissors decapitates Lizard\n   Lizard eats Paper\n   Paper disproves Spock\n   Spock vaporizes Rock\n   Rock crushes Scissors\n",
+    "invalid_choice" : "Uh-oh, that's not a valid choice. Please choose again.",
+    "instructions" : "Type an abbreviation to choose a character below: ",
+    "another_game" : "Would you like to play again? (yes or no)",
+    "player_grand_winner" : "Congrats, you're a winner!",
+    "computer_grand_winner" : "Sorry, better luck next time!",
+    "goodbye" : "Thanks for playing, goodbye!"
+
+}

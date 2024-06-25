@@ -1,0 +1,9 @@
+{
+    "welcome" : "Welcome to Mortgage Calculator! ",
+    "loan_amount" : "What is the loan amount? ",
+    "interest_rate" : "What is the interest rate? (For example, 3.5 for 3.5% or 8 for 8%) ",
+    "yearly_loan_duration" : "How many years will the loan be for? ",
+    "monthly_payment" : "The monthly payment for your mortgage will be ",
+    "another_calculation" : "Would you like to make another calculation? (y/n) ",
+    "invalid_number" : "Hmm...please try again with a valid input. "
+}
