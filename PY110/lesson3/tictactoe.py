@@ -98,7 +98,8 @@ def validate_players_choice(board, number):
                 prompt("Please choose from (1-9): ")
                 number = input()
             elif number not in empty_squares(board):
-                prompt(f"Choose from empty squares: ({join_or(valid_choices)})")
+                prompt(f"Choose from empty squares: "
+                       f"({join_or(valid_choices)})")
                 number = input()
             else:
                 break
@@ -161,13 +162,9 @@ def get_winner(board):
     """ Returns winner """
     for line in WINNING_SQUARES:
         sq1, sq2, sq3 = line
-        if (board[sq1] == HUMAN_MARKER
-            and board[sq2] == HUMAN_MARKER
-            and board[sq3] == HUMAN_MARKER):
+        if all(board[sq] == HUMAN_MARKER for sq in [sq1, sq2, sq3]):
             return 'You'
-        if (board[sq1] == COMPUTER_MARKER
-            and board[sq2] == COMPUTER_MARKER
-            and board[sq3] == COMPUTER_MARKER):
+        if all(board[sq] == COMPUTER_MARKER for sq in [sq1, sq2, sq3]):
             return 'Computer'
     return None
 
@@ -185,8 +182,10 @@ def update_round_score(board, scoreboard):
     winner = get_winner(board)
     if winner == 'You':
         scoreboard['You'] += 1
+        prompt('You won this round!')
     elif winner == 'Computer':
         scoreboard['Computer'] += 1
+        prompt('Computer won this round!')
     elif winner is None:
         prompt("This round was a tie! Let's continue.")
 
@@ -225,6 +224,7 @@ def play_1_round(first_to_play, scoreboard):
     display_board(board)
     while True:
         choose_square(board, current_player)
+        clear_screen()
         display_board(board)
         if someone_won(board) or board_full(board):
             clear_screen()
