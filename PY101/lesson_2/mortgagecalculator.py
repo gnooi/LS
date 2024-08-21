@@ -108,7 +108,7 @@ def calculate_again():
     
 def validate_response(answer):
     while True:
-        if answer == 'yes' or answer == 'no':
+        if answer in ['y', 'yes'] or answer in ['n','no']:
             break
 
         prompt(messages('another_calculation'))
@@ -137,7 +137,7 @@ while True:
 
     validate_response(answer)
 
-    if answer == 'no':
+    if answer in ['n','no']:
         break
 
 
