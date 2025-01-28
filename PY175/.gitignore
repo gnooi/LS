@@ -2,4 +2,4 @@
 */
 
 # Allow project_todos directory
-!project_todos/
+!project_todos/todo_starter
