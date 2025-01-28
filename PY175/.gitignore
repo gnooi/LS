@@ -1,5 +1,5 @@
 # Ignore all directories
 */
 
-# Allow project_todos directory
-!project_todos/todo_starter
+# Allow the project_todos/todo_starter directory
+!project_todos/todo_starter/
